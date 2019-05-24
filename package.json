@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.11",
     "react": "^16.8.6",
+    "react-dnd": "^7.4.5",
+    "react-dnd-html5-backend": "^7.4.4",
+    "react-dnd-multi-backend": "^3.2.1",
+    "react-dnd-touch-backend": "^0.8.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "redux": "^4.0.1",
+    "video-react": "^0.13.7"
+  },
+  "devDependencies": {
+    "postcss-cli": "^6.1.2",
+    "tailwindcss": "^0.7.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:tw": "postcss ./src/assets/css/tailwind.css -o ./src/tailwind.css -w",
+    "start:cra": "react-scripts start",
+    "start": "yarn start:tw & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
