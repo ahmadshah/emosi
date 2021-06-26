@@ -6,9 +6,12 @@ class Home extends Component {
         return (
             <div className="container mx-auto mt-32">
                 <div className="px-2">
-                    <div className="flex flex-wrap justify-center mb-10">
+                    <div className="flex flex-wrap justify-center mb-5">
+                        <p class="kid">Tabika KEMAS Angsana Gemilang</p>
+                    </div>
+                    <div className="flex flex-wrap justify-center mb-5">
                         <p class="kid text-5xl">EMOSI</p>
-                </div>
+                    </div>
                     <div className="flex -mx-2">
                         <div className="w-1/3 px-2">
                             <Link to="/induction">
